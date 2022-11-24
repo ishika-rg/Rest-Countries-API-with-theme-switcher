@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --LightModeText : hsl(200, 15%, 8%);
+    --lightModeInput : hsl(0, 0%, 52%);
+    --lightModeBackground : hsl(0, 0%, 98%);
+    --darkModeElements : hsl(0, 0%, 100%);
+
+}
+.dark_theme{
+    --lightModeBackground : hsl(207, 26%, 17%);
+    --LightModeText : hsl(0, 0%, 100%);
+    --darkModeElements : hsl(209, 23%, 22%);
+    --lightModeInput : hsl(0, 0%, 52%);
+
+    
+    
+}
+body{
+    background-color: var(--lightModeBackground);
+}
+i{
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    background-color: var(--darkModeElements);
+    border: none!important;
+}
+.navbar h2{
+    color: var(--LightModeText);
+}
+.navbar p {
+    color: var(--LightModeText);
+}
+.theme_btn{
+    display: flex;
+    border: none;
+    background-color: var(--darkModeElements);
+    margin-top: 8px;
+    cursor: pointer;
+
+}
+.theme_btn i{
+    padding-right: 5px;
+}
+.theme_btn .fa{
+    color: var(--LightModeText);
+    
+}
+
+.container{
+    background-color: var(--lightModeBackground);
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.input_field{
+    position: relative;
+   
+    
+}
+.input_field input{
+    padding: 10px;
+    /* width: 100%; */
+    padding: 10px 10px 10px 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    background-color: var(--darkModeElements);
+
+}
+.input_field input ::placeholder{
+    color: var(--darkModeElements);
+}
+.input_field .icon
+{
+    position: absolute;
+    padding: 10px;
+    color: var(--LightModeText);
+}
+
+.dropdown_box select {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: var(--darkModeElements);
+    color: var(--LightModeText);
+}
+.dropdown_box  option{
+    border:  none !important;
+    border-radius: 5px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+#country-names{
+    border:  none !important;
+    border-radius: 5px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+
+/* ==================card css ================= */
+
+.card_container{
+    background-color: var(--lightModeBackground);
+    padding: 1rem 4rem;
+    /* display: grid; */
+    /* grid-template-columns: repeat(4, minmax(300px, 1fr)); */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+   
+
+
+}
+.card{
+    /* flex: 1 1 calc(25% - 20px); */
+    /* width: calc(25% - 30px); */
+    width: 250px;
+    
+    margin-bottom: 5rem;
+    border-radius: 5px;
+    background-color: var(--lightModeBackground);
+    height: 400px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 1px 0px;
+    background-color: var(--darkModeElements);
+    cursor: pointer;
+}
+.card_img{
+    height: 200px;
+    /* width: 100%; */
+    
+}
+.card_img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px 5px 0 0 ;
+}
+.card_title{
+    padding: 20px 15px 15px 15px;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--LightModeText);
+
+}
+.card_info{
+    padding: 0 15px;
+    
+}
+.card_info p{
+    padding: 5px 0;
+    display: block;
+    color: var(--LightModeText);
+
+}
+.card_info p span{
+    color: var(--lightModeInput);
+
+}
+
+
+
+@media screen and (max-width: 490px) {
+
+    .navbar{
+        padding: 1rem 1rem;
+    }
+    .container{
+        padding: 1rem 1rem;
+        display: block;
+
+    }
+    .input_field input{
+        width: 100%;
+    }
+    .dropdown_box{
+        padding-top: 30px;
+    }
+    .card_container{
+        padding: 1rem 1rem;
+    }
+    .card{
+        margin: 1rem 1rem;
+        width: 100%;
+    }
+
+
+    /* ==================modal responsive css ========= */
+    .modal{
+        padding: 1rem 1rem;
+
+
+    }
+}
+
+
+@media screen and (min-width: 491px) and (max-width: 768px){
+
+    .card{
+           width: calc(50% - 5px);
+    }
+
+
+}
+
+
+/* ====================dropdown box=================== */
+
+.dropbtn{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: var(--darkModeElements);
+    color: var(--LightModeText);
+    cursor: pointer;
+    min-width: 133px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.dropbtn i{
+    padding-left: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--darkModeElements);
+    min-width: 133px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    height: 150px;
+    margin-top: 5px;
+    border-radius: 5px;
+    
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: var(--LightModeText);
+    padding: 3px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: var(--lightModeBackground);}
+  
+  .show{
+    display: block;
+    }
+ 
+
+
+/* ================================== MODAL CONTAINER CSS ==========================*/
+
+.modal_container{
+    background-color: var(--lightModeBackground);
+    padding: 1rem 4rem;
+   display: none;
+}
+
+.modal_card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: calc(50% - 20px); */
+}
+.back_btn{
+    margin: 3rem 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--darkModeElements);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 10px 0px;
+    color: var(--lightModeInput);
+}
+.back_btn i{
+    margin-right: 10px;
+}
+.back_btn:hover{
+    cursor: pointer;
+}
+.modal_img{
+    width: calc(45% - 20px);
+    margin-right: 2rem;
+    /* width: 350px;
+     */
+    height: 300px;
+}
+.modal_img img{
+    width: 100%;
+    height: 100%;
+}
+.modal_card_info{
+    width: calc(50% - 20px);
+}
+.modal_card .name{
+    padding-bottom: 2rem;
+    color: var(--LightModeText);
+    
+}
+
+.modal_card .details{
+   
+    display: flex;
+    padding-bottom: 3rem;
+}
+.details .left{
+    margin-right: 1rem;
+}
+.left p{
+    padding-bottom: 10px;
+    color: var(--LightModeText);
+
+}
+.left span{
+    color: var(--lightModeInput);
+}
+.right p{
+    padding-bottom: 10px;
+    color: var(--LightModeText);
+
+}
+.right span{
+    color: var(--lightModeInput);
+
+}
+.details .right{
+    margin-left: 1rem;
+}
+.borders{
+    display: flex;
+}
+
+
+.borders p{
+    color: var(--LightModeText);
+   
+}
+
+.border button{
+    padding: 5px 15px;
+    margin: 0 10px 5px 10px;
+    background-color: var(--darkModeElements);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+    color: var(--lightModeInput);
+    border: none;
+
+
+}
+.null{
+    padding: 2px 15px;
+    margin: 0 10px;
+    background-color: var(--darkModeElements);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: var(--lightModeInput);
+    border: none;
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .modal_container{
+        padding: 1rem 1rem;
+    }
+    .modal_img{
+        /* margin-right: 0; */
+        width: 100%;
+    }
+    .modal_card_info{
+        width: 100%;
+    }
+    .modal_card_info .name{
+        padding-bottom: 1rem;
+    
+    }
+    .modal_card_info .details{
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .modal_card{
+        display:flex;
+        flex-direction: column;
+        /* margin: 1rem 1rem; */
+    }
+    .modal_img{
+        margin-right: 0;
+    }
+    .modal_card_info .name{
+        padding-top: 1rem;
+
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+    }
+    .details .right{
+        margin-left: 0;
+        padding-top: 1rem;
+    }
+    .borders{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* -------------------loader------------------- */
+.loading{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+
+  
+}
+.loader {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px #000 inset, 0 0 10px 2px #000;
+
+    
+    /* display: block; */
+    
+
+
+
+
+    background: url(./Blue_Marble_2002.png);
+    background-size: cover;
+    /* animation: spin 30s linear alternate infinite; */
+
+    animation-name: rotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  }
+  .loader .display{
+      display: block;
+  }
+
+  .load{
+  
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin:  auto;
+    overflow: hidden;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--LightModeText);
+    
+  }
+  
+  /* .loader:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: -20px -20px 50px 2px #000 inset;
+    border-radius: 50%;
+  }
+   */
+  /* .loader > div {
+    width: 200%;
+    height: 100%;
+    animation: spin 30s linear alternate infinite;
+
+    background: url(./Blue_Marble_2002.png);
+    background-size: cover;
+    /* z-index: 99999; 
+  } */
+  /* @keyframes spin {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+   */
+
+   @keyframes rotate {
+    from {
+      background-position-x: 0px;
+    }
+    to {
+      background-position-x: 360px;
+    }
+  }

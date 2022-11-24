@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rest countries API with color theme switcher master</title>
+
+</head>
+<body>
+         <div class="loading">
+            <div class="loader"> </div>
+            <div class ="load">Loading ... </div>
+           
+
+         </div>
+        
+        <!-- <h4>Loading</h4> -->
+
+    
+    <div class="navbar">
+        <h2>Where in the world?</h2>
+        <button class = "theme_btn"><i class="fa fa-moon-o" aria-hidden="true"></i>
+        <p>Dark Mode</p></button>
+
+    </div>
+    <div class="container">
+        <div class="input_field">
+            <i class="fa fa-search icon" aria-hidden="true"></i>
+            <input class="search " type = "text" placeholder = "Search for a country ..." >
+            
+        </div>
+
+        <div class="dropdown_box">
+            
+            <button  class="dropbtn">Filter By Region<i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#" class="region">All</a>
+                <a href="#" class="region">Africa</a>
+                <a href="#" class="region">America</a>
+                <a href="#" class="region">Asia</a>
+                <a href="#" class="region">Europe</a>
+                <a href="#" class="region">Oceania</a>
+            </div> 
+
+        </div>
+    </div>
+
+    <div class="card_container">
+        <!-- <div class="card">
+            <div class="card_img">
+                <img src = "https://flagcdn.com/w320/sm.png">
+            </div>
+            <div class="card_title">Germany</div>
+            <div class="card_info">
+                <p>Population: <span>457812</span></p>
+                <p>Region: <span>Europe</span></p>
+                <p>Capital: <span>Berlin</span></p>
+            </div>
+        </div> -->       
+        
+    </div>
+
+
+    <div class="modal_container ">
+        <!-- <div class="modal">
+            <button class="back_btn"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>Back</button>
+            <div class="modal_card">
+                <div class="modal_img">
+                    <img src = "https://flagcdn.com/w320/sm.png" >
+                </div>
+                <div class="modal_card_info">
+                    <div class="name">
+                        <h2>Belgium</h2>
+                    </div>
+                    <div class="details">
+                        <div class="left">
+                            <p>Native Name: <span>ghjguj</span></p>
+                            <p>Population: <span></span> </p>
+                            <p> Region:   <span></span></p>
+                            <p> Sub region:   <span></span></p>
+                            <p>Capital:    <span></span></p>
+
+                        </div>
+                        <div class="right">
+                            <p>Top Level Domain:   <span></span></p>
+                            <p>Curriencies:    <span></span></p>
+                            <p>Languages:      <span></span></p>
+                        </div>
+                    </div>
+                    <div class="borders">
+                        <p>Border Countries: </p><span class="border_country">
+                            <li>France</li>
+                            <li>Russia</li>
+                        </span>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div> -->
+    </div>
+   
+</body>
+<script src="yes.js"></script>
+</html>
