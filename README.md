@@ -29,6 +29,7 @@ In this, the users are able to :
 ## Project Deployment
 
 - Github Pages [Click here ➡](https://ishika-rg.github.io/Rest-Countries-API-with-theme-switcher/)
+- Netlify [Click here ➡](https://rest-countriesworld.netlify.app)
 - Heroku [Click here ➡](https://rest-countries-app-api.herokuapp.com/)
 
 
